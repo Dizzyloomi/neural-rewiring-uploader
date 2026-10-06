@@ -1,0 +1,14 @@
+:root { --bg: #fbfaf7; --ink: #1d1d1b; --muted: #5d5b55; --line: #e4e1d9; --accent: #b8860b; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121211; --ink: #ecebe6; --muted: #a3a19a; --line: #2c2b28; --accent: #e3b341; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 Georgia, "Times New Roman", serif; }
+main { max-width: 44rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1.25rem; font: 600 14px/1 system-ui, sans-serif; padding-bottom: 1rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover, nav a[aria-current] { color: var(--ink); }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+p, li { color: var(--ink); }
+.lede { color: var(--muted); font-size: 1.1rem; }
+a { color: var(--accent); }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); font: 13px/1.6 system-ui, sans-serif; color: var(--muted); }
